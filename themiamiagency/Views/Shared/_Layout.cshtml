@@ -1,0 +1,201 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - The Miami Agency</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body>
+    @*<div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <a href="@Url.Action("Index", "Home")">
+                        <img  alt="The Miami Agency Logo" style="width:175px;height:50px;" src="@Url.Content("~/Content/images/Web Pages-Miami Agency.jpg")" />
+                    </a></div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li>@Html.ActionLink("Customer Service", "Index", "Home")</li>
+                        <li>@Html.ActionLink("Get a Quote", "About", "Home")</li>
+                        <li>@Html.ActionLink("Resources", "Contact", "Home")</li>
+                    </ul>
+                    @Html.Partial("_LoginPartial")
+                </div>
+            </div>
+        </div>*@
+    <div class="row">
+        <div class="col-md-6"><a href="@Url.Action("Index", "Home")"><img alt="The Miami Agency Logo" style="width:200px;height:80px;margin-left:2em;" src="@Url.Content("~/Content/images/TMA_LOGO.png")" /></a></div>
+        <div class="col-md-6"><span style="font-size: 34px; float: right; padding: 0.5em 0.5em 0 0; color:#000;font-weight:bold;">(305) 885-2055</span><img alt="phone-icon" style="float: right; padding: 2.5em 0.5em 0 0;" src="@Url.Content("~/Content/images/telephone.png")" /></div>
+    </div>
+
+
+
+
+    <div class="navbar navbar-default" role="navigation" style="margin-top:0.5em;">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @*<a class="navbar-brand" href="http://bootply.com"><i class="icon-home icon-white"> </i> Home</a>*@
+                
+                <i>@Html.ActionLink("Home", "Index", "Home", new { @class = "navbar-brand" }) </i>
+            </div>
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+
+                    <li class="menu-item dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li class="menu-item dropdown dropdown-submenu">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Business Insurance  </a>
+                                <ul class="dropdown-menu">
+                                    <li class="menu-item "><a href="#">Business Owners</a></li>
+                                    <li class="menu-item "><a href="#">Workers' Compensation</a></li>
+                                    <li class="menu-item "><a href="#">General Liability</a></li>
+                                    <li class="menu-item "><a href="#">Other</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item dropdown dropdown-submenu">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Life, Health, & Employee Benefits  </a>
+                                <ul class="dropdown-menu">
+                                    <li class="menu-item "><a href="#">Life</a></li>
+                                    <li class="menu-item "><a href="#">Health</a></li>
+                                    <li class="menu-item "><a href="#">Dental</a></li>
+                                    <li class="menu-item "><a href="#">Vision</a></li>
+                                    <li class="menu-item "><a href="#">Disability</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item dropdown dropdown-submenu">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Personal Insurance  </a>
+                                <ul class="dropdown-menu">
+                                    <li class="menu-item "><a href="#">Auto</a></li>
+                                    <li class="menu-item "><a href="#">Home</a></li>
+                                    <li class="menu-item "><a href="#">Condo</a></li>
+                                    <li class="menu-item "><a href="#">Renters</a></li>
+                                    <li class="menu-item "><a href="#">Boat</a></li>
+                                    <li class="menu-item "><a href="#">Flood</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="menu-item dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Customer Service <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li class="menu-item dropdown dropdown-submenu">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Automobile  </a>
+                                <ul class="dropdown-menu">
+                                    <li class="menu-item "><a href="#">Request ID Card for Auto Policy</a></li>
+                                    <li class="menu-item "><a href="#">Request Declaration and Coverages Page for Auto Policy</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item dropdown dropdown-submenu">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Business & Commercial  </a>
+                                <ul class="dropdown-menu">
+                                    <li class="menu-item "><a href="#">Request Declaration and Coverages Page for Commercial Auto Policy</a></li>
+                                    <li class="menu-item "><a href="#">Request General Liability Certificate of Insurance</a></li>
+                                </ul>
+                            </li>
+                            <li>@Html.ActionLink("Flood", "About", "Home")</li>
+                            <li class="menu-item dropdown dropdown-submenu">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Homeowners  </a>
+                                <ul class="dropdown-menu">
+                                    <li class="menu-item "><a href="#">Request Declaration and Coverages for Existing Homeowners Insurance Coverage</a></li>
+                                    <li class="menu-item "><a href="#">Request Evidence of Insurance</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li>@Html.ActionLink("About Us", "About", "Home")</li>
+                    <li>@Html.ActionLink("Contact Us", "Contact", "Home")</li>
+                </ul>
+                @*<ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <form class="navbar-search navbar-form" method="get" action="">
+                                <input class="form-control" placeholder="Search" name="s" type="text">
+                            </form>
+                        </li>
+                        <li>
+                            <a href="#" title="Subscribe to the RSS feed">
+                                <i class="icon-rss"> </i>
+                            </a>
+                        </li>
+                    </ul>*@
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="container-fluid body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - The Miami Agency</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+    <script type="text/javascript">
+
+        //$(document).ready(function () {
+        //    alert("test");
+        //    $(".dropdown-toggle").dropdown('toggle');
+
+        //});
+        //$(document).ready(function () {
+        //    $('.dropdown-submenu a.test .dropdown-submenu1 a.test1').on("click", function (e) {
+        //        $(this).next('ul').toggle();
+        //        e.stopPropagation();
+        //        e.preventDefault();
+        //    });
+        //});
+
+        $('ul.dropdown-menu [data-toggle=dropdown]').on('click', function (event) {
+            // Avoid following the href location when clicking
+            event.preventDefault();
+            // Avoid having the menu to close when clicking
+            event.stopPropagation();
+            //If a menu is already open we close it
+            $('ul.dropdown-menu [data-toggle=dropdown]').parent().removeClass('open');
+            // opening the one you clicked on
+            $(this).parent().addClass('open');
+            $(this).css("color", "black");
+
+            var menu = $(this).parent().find("ul");
+            var menupos = menu.offset();
+
+            if ((menupos.left + menu.width()) + 30 > $(window).width()) {
+                var newpos = -menu.width();
+            } else {
+                var newpos = $(this).parent().width();
+            }
+            menu.css({ left: newpos });
+
+        });
+
+    </script>
+
+
+
+
+</body>
+</html>

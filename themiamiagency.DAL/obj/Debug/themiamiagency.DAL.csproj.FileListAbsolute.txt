@@ -1,0 +1,10 @@
+C:\Users\angie\documents\visual studio 2013\Projects\themiamiagency\themiamiagency.DAL\bin\Debug\themiamiagency.DAL.dll.config
+C:\Users\angie\documents\visual studio 2013\Projects\themiamiagency\themiamiagency.DAL\bin\Debug\themiamiagency.DAL.dll
+C:\Users\angie\documents\visual studio 2013\Projects\themiamiagency\themiamiagency.DAL\bin\Debug\themiamiagency.DAL.pdb
+C:\Users\angie\documents\visual studio 2013\Projects\themiamiagency\themiamiagency.DAL\bin\Debug\EntityFramework.dll
+C:\Users\angie\documents\visual studio 2013\Projects\themiamiagency\themiamiagency.DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\angie\documents\visual studio 2013\Projects\themiamiagency\themiamiagency.DAL\bin\Debug\EntityFramework.xml
+C:\Users\angie\documents\visual studio 2013\Projects\themiamiagency\themiamiagency.DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\angie\documents\visual studio 2013\Projects\themiamiagency\themiamiagency.DAL\obj\Debug\themiamiagency.DAL.csprojResolveAssemblyReference.cache
+C:\Users\angie\documents\visual studio 2013\Projects\themiamiagency\themiamiagency.DAL\obj\Debug\themiamiagency.DAL.dll
+C:\Users\angie\documents\visual studio 2013\Projects\themiamiagency\themiamiagency.DAL\obj\Debug\themiamiagency.DAL.pdb

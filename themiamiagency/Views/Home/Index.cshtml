@@ -1,0 +1,142 @@
+﻿@{
+    ViewBag.Title = "Business & Commercial Insurance";
+}
+
+
+
+@*<div id="banner">
+    <div class="caption">
+        <h1 style="color:white;">The Miami Agency</h1>
+        <p style="color:white;" class="lead">Discover a way to save big on your insurance today!</p>
+        <p>
+            <a href="@Url.Action("Create", "AutoQuote")" class="btn btn-primary btn-large">Get a Quote &raquo;</a>
+        </p>
+    </div>
+</div>*@
+   
+<!-- Carousel
+================================================== -->
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <img class="first-slide" src="../Content/Images/homeBanner.jpg" alt="First slide">
+            <div class="container">
+                <div class="carousel-caption">
+                    @*<h1 style="color:white;" class="text-shadow">The Miami Agency</h1>
+                    <p style="color:white;" class="text-shadow">Florida's Source For Insurance Solutions</p>
+                    <p style="color:white;" class="text-shadow">Discover a way to save big on your insurance today!</p>
+                    <p>
+                        <a href="@Url.Action("Create", "AutoQuote")" class="btn btn-primary btn-large">Get a Quote &raquo;</a>
+                    </p>*@
+                    <h1>The Miami Agency</h1>
+                    <p>Florida's Source For Insurance Solutions.<br /> Discover a way to save big on your insurance today!</p>
+                    <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more &raquo;</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img class="second-slide" src="../Content/Images/key-west.jpg" alt="Second slide">
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1 class="text-shadow">Smart Solutions To Save You Money</h1>
+                    <p class="text-shadow">Quickly and easily submit your application for a free insurance quote using our easy to use website. As a customer, you will enjoy our suite of customer service forms all from your local agent.</p>
+                    @*<p><a class="btn btn-lg btn-primary" href="#" role="button">Get a Quote  &raquo;</a></p>*@
+                    <p><a href="@Url.Action("Create", "AutoQuote")" class="btn btn-primary btn-large">Get a Quote &raquo;</a></p>
+</div>
+            </div>
+        </div>
+        <div class="item">
+            <img class="third-slide" src="../Content/Images/miami-1635953_1920.jpg" alt="Third slide">
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1 class="text-shadow">Homeowners insurance</h1>
+                        <p class="text-shadow">Homeowners insurance protects you from financial losses caused by storms, fire, theft, and other events outlined in your policy. Carrying the right amount of coverage is essential to protecting your family and belongings</p>
+                    <p><a class="btn btn-lg btn-primary" href="#" role="button">Apply Now &raquo;</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div><!-- /.carousel -->
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <h2>Business Insurance</h2>
+            <p>
+                At GDH , we provide you with a Total Business Solution that is much more than an insurance plan. We offer insurance packages that are tailored for different types of businesses.
+            </p>
+            <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+            <h2>Life, Health, &amp; Employee Benefits</h2>
+            <p>The life and health practice at GDH is comprised of industry experts who are solely focused on helping you balance your business needs with the needs of your employees, and helping evaluate your personal or individual coverage needs.</p>
+            <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+            <h2>Personal Insurance Including Home &amp; Auto</h2>
+            <p>Wheter it's your home, auto, or other personal insurance need, evaluating risk can be challenging on your own. That's where our professionals can help. We'll advise you on your smartest, most prudent and efficient options for today - and we will continue to be here for you tomorrow.</p>
+            <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+        </div>
+    </div>
+</div>
+<!-- Second Container -->
+<div class="container-fluid well text-center">
+    <h2 class="margin" style="color:darkred;">
+        SMART SOLUTIONS
+        TO SAVE YOU MONEY
+    </h2>
+    <p>
+        G. David Harris Insurance Services & Wealth Management, Inc. specializes in all lines of insurance including  Property & Casualty Insurance, Life & Health Insurance, Employee Benefits and Financial Planning.  We incorporate practical, results driven practices to save you money.
+    </p>
+
+    <p style="font-size:12px;">Quickly and easily submit your application for a free insurance quote using our easy to use website. As a customer, you will enjoy our suite of customer service forms all from your local agent. </p><br />
+    <a href="#" class="btn btn-primary btn-lg">
+        <span class="glyphicon glyphicon-edit"></span> Get a Quote
+    </a>
+</div>
+
+@*You are using @Request.Browser.Browser,  Email us at support@mvcmiami.com
+
+@{var amounts = new List<Decimal>{100, 25.5m, -40, 27.5m};
+  var k= -11100;
+  }
+<ul>
+    @foreach (decimal amount in amounts) 
+    {
+       
+        if (amount == k)
+        {
+            
+            @formatAmount(amount);
+        }
+        else
+        {
+            @formatAmount(k);
+        }
+    }
+    
+</ul>
+
+@helper formatAmount(decimal amount) { 
+    var color = "green";
+    if (amount < 0)
+    { 
+        color = "red";
+    }
+    <span style="color:@color">@string.Format("{0:c}", amount)</span><br />
+  }*@
