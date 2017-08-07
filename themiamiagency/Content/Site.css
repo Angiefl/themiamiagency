@@ -267,6 +267,13 @@ input[type="checkbox"].input-validation-error {
 }
 
 
+#logo-ph-sm {
+    display:block;
+}
+#logo-ph-bg {
+    display:none;
+ }
+#home-label {display:none;}
 
 /**/
 
@@ -304,6 +311,18 @@ input[type="checkbox"].input-validation-error {
   .featurette-heading {
     font-size: 50px;
   }
+
+  #logo-ph-sm {
+    display:none;
+ }
+
+  #logo-ph-bg {
+    display:block;
+ }
+
+#home-label {display:block;}
+
+
 }
 
 @media (min-width: 992px) {
